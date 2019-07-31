@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Calculator</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <img src="percent.jpg" alt="percent image" class="center">
+
+    <h1 class="header">Business Calculator </h1>
+
+    <section id="getSalarysDialog">Enter your salaries here
+        <button onclick="newSalary()">more?</button>
+        <button onclick="test()">OK!</button>
+        <br>
+        <input autofocus type="number" id=0 onsubmit="newSalary()">
+        <br>
+
+
+    </section>
+
+    <button onclick="openGetSalarysDialog()" id="button">GET SALARIES</button>
+    <br>
+    <div id="averageSalary"></div>
+    <br>
+    <section id="osekSection">
+
+        Please Enter your anual income:<input type="number" id="annualIncome">(2019)
+        <br>
+        <button id="osekButton" onclick="checkSugOsek()">?איזה סוג עוסק אני</button>
+        <div id="osekDeclare"></div>
+    </section>
+    <br>
+    <section id="vatCalc">
+        <br>
+        Please enter amount to calculate VAT: <input type="number" id="vatAmount">
+        <br>
+        <button id="vatButton" onclick = "calculateVat() ">Calculate VAT</button>
+        
+        <div id="vat"></div>
+    </section>
+
+    <footer>&copy כל הזכויות שמורות <strong>אייל גנור 2019</strong></footer>
+    <script src='main.js'></script>
+</body>
+
+</html>
